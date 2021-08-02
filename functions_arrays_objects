@@ -1,0 +1,104 @@
+let name;
+let age;
+let rollNo;
+let section;
+// Object in javascript
+let person=
+{
+    name: 'Ahmad',
+    age: 19,
+    rollNo: 16, 
+    section: 'A'
+};
+person['name']='Ali';
+person['rollNo']=01;
+console.log(person.name + ' ' + person.rollNo + ' ' + person.age + ' ' + person.section);
+// this keyword is js
+let studentDetail={
+   Name : "ahmad", 
+   age : 19,
+   university: "comsats",
+   Hello : function(){
+       console.log("Hello world");
+       console.log(this.Name);
+   },
+   getArrowfun: ()=>{
+       console.log(this);
+   }
+}
+studentDetail.Hello();
+studentDetail.getArrowfun();
+//Array in js
+let selectedColors=['red', 'green', 'yellow'];
+console.log(selectedColors[2]);
+console.log(selectedColors.length);
+ let arr=new Array('ahmad', 'ali', 'uzair', 'hamza', 'shan');
+ console.log(arr);
+ console.log(arr[3]);
+//Arrays methods
+let array=['a', 'h', 'm', 'a', 'd'];
+ console.log(array.length);
+  array.push('gr');
+   console.log(array);
+    array.pop();
+     console.log(array);
+      array.shift();
+       console.log(array);
+         array.unshift('a');
+           console.log(array);
+             array.reverse();
+               console.log(array);
+                 array.sort();
+                   console.log(array);
+                    var check = Array.isArray(array);
+                       console.log(check);
+                        let st= array.toString();
+                         console.log(st);
+                          console.log(array.indexOf('m'));
+                           console.log(this);
+// function in js
+function greet(firstName, lastName)
+{
+    console.log('hello ' + firstName + ' ' + lastName);
+}
+greet('Mirza Ahmad', 'Awais');
+
+//calulating a value
+
+let fun= function square(number)
+{
+    return number * number;
+}
+console.log(' The square root of a number is = ' + fun(2));
+// strict mode in js
+"use strict"
+function sum()
+{
+let a=2+3;
+console.log(a);
+}
+sum();
+// Arrow function 
+const fun1=(a,b) => a+b;
+console.log(fun1(15,20));
+let array1=[10,20,30,40];
+const h=array1.map((item)=> item *2);
+console.log(h);
+
+const hj=(base, pow)=>{
+    let result=1;
+for(let k=1; k<=pow; k++){
+      result=result * base;
+   }
+      return result;
+};
+console.log(hj(2,10));
+// Recursion in js
+const mn=function power(base , exponent)
+{
+  if(exponent==0)
+      return 1;
+  else
+      return base * power(base, exponent-1);
+}
+console.log(mn(2,10));
