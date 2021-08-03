@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple calculator in js</title>
+    </head>
+    <body>
+          <script>
+   var result;
+    var a=prompt("Enter a first number: ");
+     var ch=prompt("Enter a operator:"); 
+      var b=prompt("Enter a second number: ");
+        switch(ch)
+         {
+          case '+':
+           result=a+b;
+           console.log("The sum of two numbers is = " + result);
+              break;
+            case '-':
+             result=a-b;
+              console.log("The minus of two numbers is = " + result);
+                  break;
+             case '*':
+              result=a*b;
+               console.log("The multiplication of two numbers is = " + result );
+                 break;
+              case '/':
+               result=a/b;
+                console.log("The division of two numbers is = " + result );
+                 break;
+                  case '%':
+                   result=a%b;
+                    console.log("The remainder of two numbers is = " + result );
+                     break;
+                      default:
+                    console.log("Sorry invalid input");
+                   break;        
+          }
+          </script>
+        
+    </body>
+</html>
